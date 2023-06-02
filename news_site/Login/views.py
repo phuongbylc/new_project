@@ -6,9 +6,12 @@ from django.views import View
 
 class IndexClass(View):
     def get(self, request):
-        return render(request, 'Login/index.html')
+        return render(request, 'Index.html')
     
 class LoginClass(View):
     def get(self, request):
         return render(request, 'Login/login.html')
 
+class HomeClass(View):
+    def get(self, request):
+        return HttpResponse("Hello, world. You're at the home.")

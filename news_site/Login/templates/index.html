@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
-    <<link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Login/css/index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Login/font/themify-icons/themify-icons.css' %}">
 </head>
 <body>
     <div class="home">
         <h1><a href="">Trang chủ</a></h1>
-        <div class="login"><a href="">Đăng nhập</a></div>
+        <div class="login"><a href="{% url 'base:login' %}">Đăng nhập</a></div>
         <span class="search-icon ti-search"></span>
     </div>
     <div class="header">
